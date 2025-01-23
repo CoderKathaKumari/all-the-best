@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>New Initiative</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: system-ui, -apple-system, sans-serif;
+            }
+
+            body {
+                background: linear-gradient(135deg, #e0e5ff 0%, #b3c0ff 100%);
+                min-height: 100vh;
+                padding: 2rem;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .hero {
+                text-align: center;
+                padding: 4rem 1rem;
+                color: #1a1a1a;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+                margin-bottom: 1.5rem;
+                background: linear-gradient(90deg, #6b4dc5, #4d7ee8);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+                color: #444;
+                margin-bottom: 2rem;
+            }
+
+            .content-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                padding: 2rem 1rem;
+            }
+
+            .card {
+                background: rgba(255, 255, 255, 0.9);
+                padding: 2rem;
+                border-radius: 1rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #2d3748;
+            }
+
+            .card p {
+                color: #4a5568;
+                line-height: 1.6;
+            }
+
+            .footer {
+                text-align: center;
+                padding: 3rem 1rem;
+                margin-top: 2rem;
+            }
+
+            .footer h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                background: linear-gradient(90deg, #6b4dc5, #4d7ee8);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .footer p {
+                color: #4a5568;
+                font-size: 1.1rem;
+            }
+
+            .flower-decoration {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 150px;
+                height: 150px;
+                opacity: 0.2;
+                pointer-events: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <section class="hero">
+                <h1>A New Initiative, A New Beginning</h1>
+                <p>Sending encouragement for your new initiative. May your journey be filled with success and joy.</p>
+            </section>
+
+            <div class="content-grid">
+                <div class="card">
+                    <h2>Embrace the Unknown</h2>
+                    <p>
+                        This is an exciting opportunity to learn, grow, and make a difference. Every step forward is a chance to
+                        discover something new and create meaningful impact.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h2>Believe in Your Vision</h2>
+                    <p>
+                        The path ahead may have challenges, but your vision and passion will guide you. Trust in your abilities
+                        and keep moving forward with determination.
+                    </p>
+                </div>
+            </div>
+
+            <section class="footer">
+                <h2>With Love, your Well-Wishers</h2>
+                <p>Sending you our warmest wishes and unwavering support. We are rooting for you!</p>
+            </section>
+        </div>
+
+        <svg class="flower-decoration" viewBox="0 0 100 100">
+            <path d="M50 0 C60 40 90 50 50 100 C10 50 40 40 50 0" fill="#6b4dc5" opacity="0.3" />
+        </svg>
+    </body>
+</html>
